@@ -5,7 +5,7 @@
 <br/>
 <h2> SORT(Sell Own Region Ticket) </h2>
  
- [지역인증 기반 티켓 중고 거래 플랫폼 서비스](https://ticketissort.com/)<br>
+ [지역인증 기반 티켓 중고 거래 플랫폼 서비스](https://ticketissort.com/)<br/>
  ![스크린샷 2022-10-22 오후 8 30 39](https://user-images.githubusercontent.com/87120463/197336930-af027196-472d-45e0-a2e7-8db606350e85.png)
 
 
