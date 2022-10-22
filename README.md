@@ -21,7 +21,7 @@
 
 <p>
 <img width="350" height="350" alt="2" src="https://user-images.githubusercontent.com/87120463/197337414-d9f0bf9b-edc5-4c50-838e-2611c4309214.png">
-<img width="350" height="350" alt="2" src="https://user-images.githubusercontent.com/87120463/197337160-95540236-2a8f-4dd9-b355-fe7612aa0f31.png">
+<img width="350" height="350" alt="2" src="https://user-images.githubusercontent.com/87120463/197337518-f1fe3dab-840b-421b-a25d-5b8114a773fe.png">
 </p>
 
 - SORT는 이러한 수요를 반영하여 가성비 좋은 여가생활을 즐길 수 있도록 서비스를 제공함.
