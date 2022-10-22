@@ -20,7 +20,7 @@
 - 반면, 불안한 국제정세로 물가상승세가 이어지면서 중고, 마감할인을 찾는 사람도 증가
 
 ![스크린샷 2022-09-14 오전 10 3](https://user-images.githubusercontent.com/87120463/197337016-faf5c7a5-4117-43af-80e3-83410467c11a.png)
-<img width="359" alt="2" src="https://user-images.githubusercontent.com/87120463/197337160-95540236-2a8f-4dd9-b355-fe7612aa0f31.png">
+<img width="359" height="300" alt="2" src="https://user-images.githubusercontent.com/87120463/197337160-95540236-2a8f-4dd9-b355-fe7612aa0f31.png">
 
 
 
