@@ -24,7 +24,7 @@
 <img width="350" height="350" alt="2" src="https://user-images.githubusercontent.com/87120463/197337518-f1fe3dab-840b-421b-a25d-5b8114a773fe.png">
 </p>
 
-- SORT는 이러한 수요를 반영하여 가성비 좋은 여가생활을 즐길 수 있도록 서비스를 제공함.
+- SORT는 이러한 수요를 반영하여 가성비 좋은 여가생활을 즐길 수 있도록 서비스를 기획후 제공합니다.
 
 <br/>
 <br/>
