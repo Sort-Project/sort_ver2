@@ -20,6 +20,8 @@
 - 반면, 불안한 국제정세로 물가상승세가 이어지면서 중고, 마감할인을 찾는 사람도 증가
 
 ![스크린샷 2022-09-14 오전 10 3](https://user-images.githubusercontent.com/87120463/197337016-faf5c7a5-4117-43af-80e3-83410467c11a.png)
+<img width="552" alt="2" src="https://user-images.githubusercontent.com/87120463/197337143-ca152bcc-30b7-453d-ab91-be57503b3aa1.png">
+
 
 
 - SORT는 이러한 수요를 반영하여 가성비 좋은 여가생활을 즐길 수 있도록 서비스를 제공함.
