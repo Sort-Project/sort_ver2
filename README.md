@@ -2,13 +2,6 @@
 
 ```
 NestServer
-├─ .eslintrc.js
-├─ .gitignore
-├─ .prettierrc
-├─ README.md
-├─ nest-cli.json
-├─ package-lock.json
-├─ package.json
 ├─ src
 │  ├─ app.module.ts
 │  ├─ main.ts
@@ -17,6 +10,14 @@ NestServer
 │     ├─ user.model.ts
 │     ├─ user.module.ts
 │     └─ user.service.ts
+│
+├─ .eslintrc.js
+├─ .gitignore
+├─ .prettierrc
+├─ README.md
+├─ nest-cli.json
+├─ package-lock.json
+├─ package.json
 ├─ tsconfig.build.json
 └─ tsconfig.json
 
