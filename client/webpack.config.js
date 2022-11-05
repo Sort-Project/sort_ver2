@@ -73,8 +73,9 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: './public/index.html',
+      favicon: './public/logo.ico',
     }),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
     // new FaviconWebpackPlugin('./public/favicon.ico'),
   ],
 };
