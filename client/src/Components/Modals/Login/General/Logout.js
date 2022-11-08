@@ -12,7 +12,6 @@ function Logout() {
       })
       .catch((err) => {
         window.alert('로그아웃 실패했습니다.');
-        console.log(err);
       });
   };
 

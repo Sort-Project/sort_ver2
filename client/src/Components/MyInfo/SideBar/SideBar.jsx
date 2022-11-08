@@ -19,8 +19,6 @@ const SideBar = () => {
   const trademenus = useSelector((state) => state.mypage.trade);
   const myInfomenus = useSelector((state) => state.mypage.myInfo);
   const dispatch = useDispatch();
-
-  console.log(trademenus);
   return (
     <Sides.SideBar>
       <Sides.MypageTitle onClick={() => dispatch(menuChoice(0))}>MY PAGE</Sides.MypageTitle>
