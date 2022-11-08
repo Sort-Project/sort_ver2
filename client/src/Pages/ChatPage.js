@@ -125,7 +125,6 @@ const ChatUI = () => {
 
   const chatHandler = (e) => {
     setChatText(e.target.value);
-    console.log(chatText);
   };
 
   useEffect(() => {
@@ -137,8 +136,6 @@ const ChatUI = () => {
   const send = (e) => {
     e.key === 'Enter' ? (socket.emit('message', chatText), setChatText('')) : null;
   };
-
-  console.log(receive);
 
   //-- 채팅방 클릭했을때 --//
   const chatJoin = (chatId) => {

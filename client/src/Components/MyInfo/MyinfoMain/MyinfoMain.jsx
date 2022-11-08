@@ -7,8 +7,6 @@ import { postUserInfo, betaPostUserInfo } from '../../../util/userInfo';
 
 const MyinfoMain = ({ email, name }) => {
   const navigate = useNavigate();
-  console.log(email, name);
-
   return (
     <Draws.CustomerContent
       style={{
