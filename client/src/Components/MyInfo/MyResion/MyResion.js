@@ -32,7 +32,6 @@ const MyResion = () => {
       })
       .catch((err) => {
         window.alert('지역인증에 실패했습니다.');
-        console.log(err);
       });
   };
 
@@ -98,7 +97,6 @@ const MyResion = () => {
               if (infoDiv !== null && infoDiv.innerHTML !== null) {
                 infoDiv.innerHTML = result[i].address_name;
               }
-              console.log(result[i].address_name);
               setAddress(result[i].address_name);
               break;
             }

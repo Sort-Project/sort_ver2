@@ -40,11 +40,10 @@ const Signup = (props) => {
   };
 
   const reqSignup = (data) => {
-    console.log(data);
     axios
       .post(`${process.env.LOGIN_API_URL}signup`, data)
-      .then((res) => console.log(res.data))
-      .catch((err) => console.log(err));
+      .then((res) => res.data)
+      .catch((err) => err);
   };
 
   const login = {
@@ -70,12 +69,10 @@ const Signup = (props) => {
         const { accessToken } = res.data.data;
         setAccess(res.data.data.accessToken);
         setRefresh(res.data.data.refreshToken);
-        console.log(res.data);
         axios.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
         setTimeout(s, extension_tokken - 60000);
       })
       .catch((err) => {
-        console.log(err);
         return err;
       });
   };
@@ -200,7 +197,6 @@ const Signup = (props) => {
   const Test = useSelector((state) => state.items.signupInfo);
   const userData = useSelector((state) => state.account.signupInfo);
   const { signup: sendSignup } = postSignup();
-  console.log(userData);
   return (
     <Logins.Container>
       <Logins.Box>

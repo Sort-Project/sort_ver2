@@ -117,7 +117,6 @@ const Header = (props) => {
     );
   };
   const NavNonUser = () => {
-    console.log(localStorage.getItem('socialtoken'));
     return (
       <LoginSection>
         <LoginBox>

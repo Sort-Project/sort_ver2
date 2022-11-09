@@ -20,17 +20,14 @@ const MyProfile = ({ props }) => {
   const { email, name, userId } = betaPostUserInfo();
   const editName = useDispatch();
   const [editInput, setEdit] = useState('');
-  console.log(email, name, userId);
   const { editInfo } = editUserInfo();
   const accessToken = localStorage.getItem('accessToken');
-  console.log(accessToken);
   const infoo = {
     email,
     name: editInput,
     userId,
     accessToken,
   };
-  console.log(infoo);
 
   // const changeId = () => {
   //   axios

@@ -15,7 +15,6 @@ const getItems = (api: string) => {
   const [error, setError] = useState<Error>();
   const apiUrl = api === 'landing' ? 'board/' : `board/${api}`;
   const caseByResult = api === 'landing' ? data.slice(0, 5) : [data, loading, error];
-  console.log(api);
   useEffect(() => {
     setLoading(true);
     const itemdata = async () => {
