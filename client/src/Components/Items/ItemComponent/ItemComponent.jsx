@@ -1,11 +1,11 @@
 import React from 'react';
 import { ItemBox, ItemImg, ItemTitle, ItemPrice, SellInfo } from './ItemStyle';
 
-const ItemComponent = ({ title, price, region, createdDate, id, pageMove, photo }) => {
+const ItemComponent = ({ title, price, region, createdDate, id, pageMove, img_url }) => {
   return (
     <ItemBox onClick={() => pageMove(`/main/detail/${id}`)}>
       <ItemImg>
-        <img src={photo} />
+        <img src={img_url} />
       </ItemImg>
       <ItemTitle>{title}</ItemTitle>
       <ItemPrice>

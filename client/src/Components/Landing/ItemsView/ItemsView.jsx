@@ -15,7 +15,7 @@ const ItemsView = ({ latestDatas }) => {
           return (
             <Lands.ItemPreview key={items.id}>
               <Lands.PreviewImg>
-                <img src={items.photo} />
+                <img src={items.img_url} />
               </Lands.PreviewImg>
               <Lands.PreviewInfo>
                 <p className="title">{items.title}</p>

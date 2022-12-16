@@ -17,7 +17,7 @@ const ItemList = ({ itemsData, pageMove, isLoading }) => {
             return (
               <ItemComponent
                 pageMove={pageMove}
-                photo={dataList.photo}
+                img_url={dataList.img_url}
                 key={dataList.id}
                 id={dataList.id}
                 title={dataList.title}

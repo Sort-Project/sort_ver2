@@ -40,7 +40,7 @@ const WriteMain = () => {
     body: '',
     end_date: '',
     status: '판매중',
-    photo: '0',
+    img_url: '0',
     region: '서울시 강남구 논현동',
     status: '판매중',
   });

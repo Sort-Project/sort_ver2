@@ -1,10 +1,10 @@
 import React from 'react';
 import { Detail_Img } from './ImgStyle';
 
-const DetailImg = ({ photo }) => {
+const DetailImg = ({ img_url }) => {
   return (
     <Detail_Img>
-      <img src={photo} />
+      <img src={img_url} />
     </Detail_Img>
   );
 };

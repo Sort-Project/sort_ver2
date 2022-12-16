@@ -2,14 +2,14 @@ import React from 'react';
 import { Detail_ImgList, Detail_NextImg } from './imgListStyle';
 import { LeftIcon, RightIcon, CheckIcon } from '../../Common/Icons/Icons';
 
-const ImgList = ({ photo }) => {
+const ImgList = ({ img_url }) => {
   return (
     <Detail_ImgList>
       <div className="list_icon">
         <LeftIcon />
       </div>
       <Detail_NextImg>
-        <img src={photo} />
+        <img src={img_url} />
       </Detail_NextImg>
       <Detail_NextImg />
       <Detail_NextImg />

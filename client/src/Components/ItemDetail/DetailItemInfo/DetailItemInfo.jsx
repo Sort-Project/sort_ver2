@@ -16,7 +16,7 @@ import {
   Btn,
 } from './InfoStyle';
 
-const DetailItemInfo = ({ title, price, createdDate, endDate, seat, region, photo }) => {
+const DetailItemInfo = ({ title, price, createdDate, endDate, seat, region, img_url }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const like = useSelector((state) => state.items.isLike);

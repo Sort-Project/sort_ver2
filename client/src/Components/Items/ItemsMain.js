@@ -23,6 +23,7 @@ const ItemsMain = () => {
   const dataloads = getItems(api, 23);
   const itemsData = dataloads[0].slice(0, viewCount);
   const isLoading = dataloads[1];
+
   return (
     <MainContainer>
       <Filter />
