@@ -57,7 +57,7 @@ const initialState: InitialState = {
     end_date: '',
     seat_number: '',
     region: '서울시 강남구 논현동',
-    photo: '',
+    img_url: '',
     status: '',
   },
   itemsId: [],

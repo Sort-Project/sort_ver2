@@ -5,7 +5,7 @@ interface ItemType {
   end_date: string;
   seat_number: string;
   region: string;
-  photo: string;
+  img_url: string;
   status: string;
 }
 
