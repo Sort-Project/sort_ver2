@@ -13,7 +13,7 @@ const getItems = (api: string) => {
   const [data, setData] = useState<ItemType[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<Error>();
-  const apiUrl = api === 'landing' ? 'board/' : `board/${api}`;
+  const apiUrl = api === 'landing' ? 'posts/' : `posts/${api}`;
   const caseByResult = api === 'landing' ? data.slice(0, 5) : [data, loading, error];
   useEffect(() => {
     setLoading(true);
@@ -36,7 +36,7 @@ const getItems = (api: string) => {
 const getDetail = (api?: number) => {
   const [data, setData] = useState<ItemType[]>([]);
   const [error, setError] = useState<Error>();
-  const apiUrl = `board/${api}`;
+  const apiUrl = `posts/${api}`;
   useEffect(() => {
     const itemdata = async () => {
       try {
@@ -60,7 +60,7 @@ const usePost = (data: ItemType) => {
   const caseByResult = !success ? failed : success;
   const postData = async (data: any) => {
     await itemsApi
-      .post('board', data)
+      .post('posts', data)
       .then((res) => {
         setSuccess(alert('상품이 등록 되었습니다!'));
         navigate('/main');
@@ -118,7 +118,7 @@ const useEdit = (api: number, data: ItemType) => {
   const caseByResult = !success ? failed : success;
   const EditData = async (api: number, data: any) => {
     await axios
-      .patch(`/board/${api}`, data)
+      .patch(`/posts/${api}`, data)
       .then((res) => {
         setSuccess(alert('상품이 수정 되었습니다!'));
         navigate(`main/detail/${api}`);
@@ -138,7 +138,7 @@ const deleteItem = (data: number) => {
   const [failed, setfailed] = useState<void | string>('');
   const deleteData = async (data: number) => {
     await itemsApi
-      .delete(`board/${data}`)
+      .delete(`posts/${data}`)
       .then((res) => {
         setSuccess(alert('상품이 삭제 되었습니다!'));
         location.reload();
