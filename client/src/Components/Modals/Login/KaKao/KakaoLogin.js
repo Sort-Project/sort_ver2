@@ -15,9 +15,9 @@ function kakaoLogout() {
   });
 }
 
-const KakaoLogin = () => {
-  const REDIRECT_URI = `http://localhost:3003/auth/callback/kakao`;
-  const site = `https://kauth.kakao.com/oauth/oauth/authorize?client_id=${process.env.DOBBY_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
+const KakaoLogin = ({ btnname }) => {
+  const REDIRECT_URI = `http://localhost:3003/oauth/callback/kakao`;
+  const site = `https://kauth.kakao.com/oauth/oauth/authorize?client_id=${process.env.KAKAO_KEY}&redirect_uri=${REDIRECT_URI}&response_type=code`;
   const btn = () => {
     useEffect(() => {}, []);
   };
@@ -25,7 +25,7 @@ const KakaoLogin = () => {
   return (
     <KakaoLoginButton onClick={() => (window.location.href = site)}>
       <RiKakaoTalkFill />
-      <span>카카오 로그인</span>
+      <span>카카오 {btnname ? btnname : '로그인'}</span>
     </KakaoLoginButton>
   );
 };
