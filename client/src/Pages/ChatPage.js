@@ -102,12 +102,12 @@ import { BsEmojiSmile } from 'react-icons/bs';
 
 import styled from 'styled-components';
 
-const endpoint = 'https://jjjserver.herokuapp.com/'; // heroku로 socket 배포한 서버
-let socket = io(endpoint, {
-  cors: {
-    origin: '*',
-  },
-});
+// const endpoint = 'https://jjjserver.herokuapp.com/'; // heroku로 socket 배포한 서버
+// let socket = io(endpoint, {
+//   cors: {
+//     origin: '*',
+//   },
+// });
 
 const ChatPage = () => {
   return (
@@ -120,36 +120,36 @@ const ChatPage = () => {
 };
 
 const ChatUI = () => {
-  const [receive, setReceive] = useState([]);
-  const [chatText, setChatText] = useState();
+  // const [receive, setReceive] = useState([]);
+  // const [chatText, setChatText] = useState();
 
-  const chatHandler = (e) => {
-    setChatText(e.target.value);
-  };
+  // const chatHandler = (e) => {
+  //   setChatText(e.target.value);
+  // };
 
-  useEffect(() => {
-    socket.on('message', (msg) => {
-      setReceive([...receive, msg]);
-    });
-  }, [receive]);
+  // useEffect(() => {
+  //   socket.on('message', (msg) => {
+  //     setReceive([...receive, msg]);
+  //   });
+  // }, [receive]);
 
-  const send = (e) => {
-    e.key === 'Enter' ? (socket.emit('message', chatText), setChatText('')) : null;
-  };
+  // const send = (e) => {
+  //   e.key === 'Enter' ? (socket.emit('message', chatText), setChatText('')) : null;
+  // };
 
-  //-- 채팅방 클릭했을때 --//
-  const chatJoin = (chatId) => {
-    const [chatSell, setChatSell] = useState(true);
-    const handleChatJoin = useCallback((e) => {
-      setChatSell(false);
-    }, []);
+  // //-- 채팅방 클릭했을때 --//
+  // const chatJoin = (chatId) => {
+  //   const [chatSell, setChatSell] = useState(true);
+  //   const handleChatJoin = useCallback((e) => {
+  //     setChatSell(false);
+  //   }, []);
 
-    useEffect(() => {
-      // 서버로 보내는 함수 작성
-    }, [chatId]);
+  //   useEffect(() => {
+  //     // 서버로 보내는 함수 작성
+  //   }, [chatId]);
 
-    return { chatSell, handleChatJoin };
-  };
+  //   return { chatSell, handleChatJoin };
+  // };
 
   return (
     <Draws.Container>

@@ -43,7 +43,7 @@ const Pages = () => {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/main" element={<MainPage />} />
-        <Route path="/chat" element={<ChatPage />} />
+        {/* <Route path="/chat" element={<ChatPage />} /> */}
         <Route path="/write" element={<WritePage />} />
         <Route path="/mypage/sell/edit/:id" element={<EditMain />} />
         <Route path="/mypage" element={<MyPage />} />
