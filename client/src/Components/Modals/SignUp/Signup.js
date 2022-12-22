@@ -8,6 +8,8 @@ import Signups from './SignupStyle';
 import { useDispatch, useSelector } from 'react-redux';
 import { createUser } from '../../../redux/loginslice';
 import { postSignup, usePost, postLogin } from '../../../util/requestLogin';
+import KakaoLogin from '../Login/KaKao/KakaoLogin';
+import NaverLogin from '../Login/Naver/NaverLogin';
 // import jwt_decode from 'jwt-decode';
 
 const Signup = (props) => {
@@ -151,10 +153,10 @@ const Signup = (props) => {
       });
       return;
     }
-    if (value.length === 0 || value === '') {
-      setId({ value: value, text: '아이디를 입력해주세요.', hidden: false });
-      return;
-    }
+    // if (value.length === 0 || value === '') {
+    //   setId({ value: value, text: '아이디를 입력해주세요.', hidden: false });
+    //   return;
+    // }
     if (value.length < 2) {
       setId({ value: value, text: '아이디를 2글자 이상 입력해주세요.', hidden: false });
       return;
@@ -212,7 +214,7 @@ const Signup = (props) => {
             ref={emailInput}
             id="email"
             type="email"
-            placeholder="예) sort@sort.co.kr"
+            placeholder=" sort@sort.com"
             defaultValue={email.value}
             onChange={(e) => {
               dispatch(createUser({ email: e.target.value }));
@@ -231,7 +233,7 @@ const Signup = (props) => {
 
         <Logins.IdBox>
           <Logins.NameBox color={!id.hidden ? 'red' : 'black'}>
-            아이디
+            {/* 아이디
             <Logins.InputBox
               color={!id.hidden ? 'red' : 'black'}
               ref={idInput}
@@ -242,7 +244,7 @@ const Signup = (props) => {
                 dispatch(createUser({ name: e.target.value }));
                 checkId(e.target.value);
               }}
-            />
+            /> */}
             <Logins.HiddenMessage hidden={id.hidden}>{id.text}</Logins.HiddenMessage>
           </Logins.NameBox>
         </Logins.IdBox>
@@ -292,6 +294,8 @@ const Signup = (props) => {
         >
           가입하기
         </Logins.Button>
+        <KakaoLogin btnname={'회원가입'} />
+        <NaverLogin btnName={'회원가입'} />
       </Logins.Box>
     </Logins.Container>
   );
