@@ -17,7 +17,7 @@ const KakaoRediect = () => {
     // j47K6tkxLmLYFICQyKFbg9qLIx6ocLabbJBJ2nPzji-SN1jIM_NvizwwXq5kvyVFAmsj5go9c-wAAAGEI9xHKg
     axios
       .post(
-        `https://kauth.kakao.com/oauth/token?grant_type=${grant_type}&client_id=${process.env.DOBBY_KEY}&redirect_uri=http://localhost:3003/auth/callback/kakao&code=${code}`,
+        `https://kauth.kakao.com/oauth/token?grant_type=${grant_type}&client_id=${process.env.KAKAO_KEY}&redirect_uri=http://localhost:3003/oauth/callback/kakao&code=${code}`,
       )
       .then((res) => {
         const { access_token } = res.data;
