@@ -1,9 +1,9 @@
 import React from 'react';
 import { ItemBox, ItemImg, ItemTitle, ItemPrice, SellInfo } from './ItemStyle';
 
-const ItemComponent = ({ title, price, region, createdDate, id, pageMove, img_url }) => {
+const ItemComponent = ({ post_id, title, price, region, createdDate, pageMove, img_url }) => {
   return (
-    <ItemBox onClick={() => pageMove(`/main/detail/${id}`)}>
+    <ItemBox onClick={() => pageMove(`/main/detail/${post_id}`)}>
       <ItemImg>
         <img src={img_url} />
       </ItemImg>
