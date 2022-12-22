@@ -6,6 +6,7 @@ interface ItemType {
   seat_number: string;
   region: string;
   img_url: string;
+  created_date: string;
   status: string;
 }
 
