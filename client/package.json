@@ -8,7 +8,8 @@
     "start": "webpack-dev-server",
     "build": "NODE_ENV=production webpack --progress",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "aws s3 sync ./docs s3://ticketissort.com --profile=adminES"
+    "deploy": "aws s3 sync ./docs s3://ticketissort.com --profile=adminES --cache-control max-age=604800 ",
+    "invalidate": "aws cloudfront create-invalidation --profile=adminES --distribution-id E2U5KOXYFUZ2W2 --paths /*"
   },
   "keywords": [],
   "author": "",
