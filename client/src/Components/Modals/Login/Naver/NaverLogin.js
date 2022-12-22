@@ -3,17 +3,14 @@ import styled from 'styled-components';
 import { useEffect, useRef } from 'react';
 import { SiNaver } from 'react-icons/si';
 
-const NaverLogin = () => {
+const NaverLogin = ({ btnName }) => {
   const naverRef = useRef();
   const { naver } = window;
 
-  const NAVER_ID = process.env.NAVER_CLIENT_ID;
-  const NAVER_CALLBACK_URL = 'http://localhost:3003/oauth/callback/naver';
-
   const initializeNaverLogin = () => {
     const naverLogin = new naver.LoginWithNaverId({
-      clientId: NAVER_ID,
-      callbackUrl: NAVER_CALLBACK_URL,
+      clientId: process.env.NAVER_CLIENT_ID,
+      callbackUrl: process.env.NAVER_CALLBACK_URL,
       isPopup: false,
       loginButton: { color: 'green', type: 3, height: 30 },
       callbackHandle: true,
@@ -42,7 +39,7 @@ const NaverLogin = () => {
       <NaverIdLogin ref={naverRef} id="naverIdLogin" />
       <NaverLoginBtn onClick={handleNaverLogin}>
         <SiNaver style={{ color: 'white', width: 15, height: 15 }} />
-        <NaverLoginTitle>네이버 로그인</NaverLoginTitle>
+        <NaverLoginTitle>네이버 {btnName ? btnName : '로그인'}</NaverLoginTitle>
       </NaverLoginBtn>
     </>
   );
