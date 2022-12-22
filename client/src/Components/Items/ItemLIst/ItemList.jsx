@@ -18,8 +18,8 @@ const ItemList = ({ itemsData, pageMove, isLoading }) => {
               <ItemComponent
                 pageMove={pageMove}
                 img_url={dataList.img_url}
-                key={dataList.id}
-                id={dataList.id}
+                key={dataList.post_id}
+                post_id={dataList.post_id}
                 title={dataList.title}
                 price={dataList.price}
                 region={dataList.region}
