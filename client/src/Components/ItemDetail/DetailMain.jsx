@@ -13,25 +13,25 @@ import { getDetail } from '../../util/requestItem';
 
 const DetailMain = () => {
   const { id } = useParams();
-  const { title, body, price, end_date, seat_number, createdDate, region, img_url } = getDetail(id);
-  const detailPageDate = calculateDate(createdDate);
+  const itemData = getDetail(id)[0];
+  const detailPageDate = calculateDate(itemData?.created_date);
   return (
     <Detail_Container>
       <Detail_Section>
         <ItemCategory />
-        <DetailImg img_url={img_url} />
+        <DetailImg img_url={itemData?.img_url} />
         <DetailItemInfo
-          title={title}
-          price={price}
-          createdDate={detailPageDate}
-          endDate={end_date}
-          seat={seat_number}
-          region={region}
+          title={itemData?.title}
+          price={itemData?.price}
+          createdDate={itemData?.detailPageDate}
+          endDate={itemData?.end_date}
+          seat={itemData?.seat_number}
+          region={itemData?.region}
         />
-        <ImgList img_url={img_url} />
-        <Description description={body} />
+        <ImgList img_url={itemData?.img_url} />
+        <Description description={itemData?.body} />
         <ItemSeller />
-        <ItemSubInfo region={region} />
+        <ItemSubInfo region={itemData?.region} />
         <SellerReview />
       </Detail_Section>
     </Detail_Container>
