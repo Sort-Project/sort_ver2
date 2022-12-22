@@ -1,6 +1,5 @@
 import axios from 'axios';
-import { access } from 'fs';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { LoginType, SignupType } from './loginType';
 import { TokenType } from './userType';
@@ -29,7 +28,7 @@ export const keepLogin = (refreshToken: string) => {
   if (!checkLogin) return;
 
   const replay = () => {
-    const { accessToken }: { accessToken: string } = axios.defaults.headers.common['Authorization'];
+    const { accessToken }: string | number | boolean = axios.defaults.headers.common['Authorization'];
     const { refreshToken } = axios.defaults.headers.common['Authorizations'];
     axios
       .post(`${process.env.LOGIN_API_URL}reissue`, { headers: { accessToken, refreshToken } })
