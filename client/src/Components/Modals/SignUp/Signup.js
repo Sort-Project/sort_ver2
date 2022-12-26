@@ -10,7 +10,6 @@ import { createUser } from '../../../redux/loginslice';
 import { postSignup, usePost, postLogin } from '../../../util/requestLogin';
 import KakaoLogin from '../Login/KaKao/KakaoLogin';
 import NaverLogin from '../Login/Naver/NaverLogin';
-// import jwt_decode from 'jwt-decode';
 
 const Signup = (props) => {
   const navigate = useNavigate();
