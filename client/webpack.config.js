@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 const RefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const dotenv = require('dotenv').config();
 const refreshPlugin = ['react-refresh/babel'];
 const mode = process.env.NODE_ENV || 'development';
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
@@ -27,7 +28,7 @@ module.exports = {
     },
     hot: true,
     compress: true,
-    port: 3003,
+    port: process.env.PORT,
     historyApiFallback: true,
     proxy: {
       '/v1/': {
