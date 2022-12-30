@@ -9,3 +9,4 @@ reuselogic
 S3upload
 .vscode
 node_modules
+nginx.conf
